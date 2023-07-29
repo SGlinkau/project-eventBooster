@@ -1,0 +1,44 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+$font-family: 'Montserrat';
+$main-color: #DC56C5;
+$secondary-color: #FFFFFF;
+
+body {
+   font-family: $font-family;
+   font-style: normal;
+   color: $secondary-color;
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    background-image: url("../images/Events-background-mobile.png");
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/Events-background-tablet.png");
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url("../images/Events-background-desktop.png");
+
+  }
+}
+
+//font-weight
+$light: 400;
+$medium: 600;
+$bold: 700;
+
+// breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+$up-to-tablet: 767px;
+$up-to-desktop: 1279px;

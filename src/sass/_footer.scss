@@ -1,0 +1,29 @@
+// .footer__container {
+    
+    
+//     width: 1280 px;
+    
+// }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.footer__description p {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #939393;
+};
+
+.heart {
+    color: red;
+}

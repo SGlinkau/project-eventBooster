@@ -1,0 +1,151 @@
+@media screen and (min-width: 320px) {
+  .events {
+    width: 320px;
+    padding: 0 21px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // cursor: pointer;
+    &__design {
+      width: 108px;
+      height: 101px;
+      background-color: transparent;
+      border: 1px solid rgba(220, 86, 197, 0.3);
+      border-radius: 50px 0px;
+      position: absolute;
+      top:0;
+      right: 0;
+    }
+    &__wrapper {
+    margin-bottom: 30px;
+    position:relative;
+    height: 316px;
+    width: 139px;
+    
+    }
+    &__image {
+      width: 128px;
+      height: 161px;
+      border-radius: 50px 0px;
+      margin-top: 9px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    &__name {
+      color: $main-color;
+      font-weight: $bold;
+      font-size: 14px;
+      line-height: 17px;
+      width: 128px;
+      text-align: center;
+      margin-top: 0px;
+      margin-right: 1px;
+      margin-bottom: 0px;
+    
+    }
+    &__date {
+      font-weight: $light;
+      font-size: 14px;
+      line-height: 17px;
+      width: 128px;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
+    &__address {
+      font-weight: $medium;
+      font-size: 12px;
+      line-height: 15px;
+      width: 128px;
+      text-align: center;
+      margin-right: 0px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
+    &__svg {
+      width: 6px; 
+      height: 9px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+   .events-container {
+    width: 768px;
+  }
+   .events {
+    width: 768px;
+    padding: 0 74px;
+    margin: 0 auto;
+       &__design {
+       width: 153px;
+      height: 143px;
+    }
+    &__wrapper {
+    margin-bottom: 58px;
+    height: 368px;
+    width: 195px;
+    }
+    &__image {
+      width: 180px;
+      height: 227px;
+      border-radius: 50px 0px;
+      margin-top: 13px;
+    }
+    &__name {
+      font-size: 16px;
+      line-height: 20px;
+      width: 180px;
+    }
+    &__date {
+      font-weight: $light;
+      font-size: 16px;
+      line-height: 20px;
+      width: 180px;
+    }
+    &__address {
+      font-weight: $medium;
+      font-size: 14px;
+      line-height: 17px;
+      width: 180px;
+    }
+     &__svg {
+      width: 7px; 
+      height: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+   .events-container {
+    width: 1280px;
+  }
+   .events {
+    width: 1280px;
+    padding: 0 175px;
+    margin: 0 auto;
+    &__wrapper {
+    margin-bottom: 63px;
+    margin-left: 35px;
+    &:nth-child(1) {
+      margin-left: 0px;
+    }
+    &:nth-child(5) {
+      margin-left: 0px;
+    }
+     &:nth-child(9) {
+      margin-left: 0px;
+    }
+     &:nth-child(13) {
+      margin-left: 0px;
+    }
+     &:nth-child(17) {
+      margin-left: 0px;
+    }
+    }
+  }
+}
+
+
+

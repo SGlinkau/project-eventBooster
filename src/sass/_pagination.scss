@@ -1,0 +1,72 @@
+.pagination {
+  display: flex;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+};
+
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 30px;
+  // height: 30px;
+  & span {
+    color: #ffffff;
+  };
+};
+
+.page {
+  display: flex;
+  justify-content: space-between;
+  // width: 30px;
+  // height: 30px;
+  padding: 5px 12px 5px 12px;
+  cursor: pointer;
+  & span {
+    color: #ffffff;
+  };
+  &:hover {
+    border: 1px solid #DC56C5;
+    color: #DC56C5;
+    border-radius: 10px 0px;
+  }
+};
+
+.active-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 30px;
+  // height: 30px;
+  color: #DC56C5;
+  border: 1px solid #DC56C5;
+  border-radius: 10px 0px;
+  animation: changePage 0.5s ease-in-out;
+  & span {
+    color: #DC56C5;
+  };
+  
+};
+
+@keyframes changePage {
+  0% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.7);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(2.0);
+    opacity: 0.1;
+  }
+}
